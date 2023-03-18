@@ -1,0 +1,207 @@
+#slider {
+    position: relative;
+    top: -35px;
+    width: 800px;
+    height: 400px;
+    animation-name: slideShowIndex;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes slideShowIndex {
+    0%      {transform: scale(1); opacity: 0;}
+    10%    {transform: scale(1.1); }
+    100%    {transform: scale(1.2); opacity: 1;}
+}
+.dot-button {
+    position: absolute;
+    top: 109%;
+    left: 42.5%;
+    border: none;
+    border-radius: 50%;
+    padding: 8px 8px;
+    cursor: pointer;
+}
+#first-button {
+    background-color:#051833;
+    margin-left: 0px;
+}
+#second-button {
+    background-color:#051833;
+    margin-left: 30px;
+}
+#third-button {
+    background-color:#051833;
+    margin-left: 60px;
+}
+#fourth-button {
+    background-color:#051833;
+    margin-left: 90px;
+}
+/* IMG1 ANIMATION START */
+/* IMG1 *//* IMG1 *//* IMG1 *//* IMG1 *//* IMG1 *//* IMG1 *//* IMG1 */
+.img1 {
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -40%) scale(1.2);
+    z-index: 5;
+    transition: width 0.2s, height 0.2s;
+    cursor: default;
+    border: solid 1px rgba(0, 210, 255, 1);
+}
+.img1:hover {
+    cursor: pointer;
+    width: 425px;
+    height: 265.625px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 210, 255, 1);
+}
+#img01-animation {
+    animation-name: none;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes img01-front-to-left {
+    0%      {left: 50%; top: 60%; transform: translate(-50%, -40%) scale(1.2); z-index: 5;} /* FRONT */
+    100%    {left: 35%; top: 50%; transform: translate(-65%, -50%) scale(1); z-index: 3;} /* LEFT */
+}
+@keyframes img01-left-to-back {
+    0%      {left: 35%; top: 50%; transform: translate(-65%, -50%) scale(1); z-index: 3;} /* LEFT */
+    100%    {left: 50%; top: 40%; transform: translate(-50%, -60%) scale(0.8); z-index: 2;} /* BACK */
+}
+@keyframes img01-back-to-right {
+    0%      {left: 50%; top: 40%; transform: translate(-50%, -60%) scale(0.8); z-index: 2;} /* BACK */
+    100%    {left: 65%; top: 50%; transform: translate(-35%, -50%) scale(1); z-index: 4;} /* RIGHT */
+}
+@keyframes img01-right-to-front {
+    0%      {left: 65%; top: 50%; transform: translate(-35%, -50%) scale(1); z-index: 4;} /* RIGHT */
+    100%    {left: 50%; top: 60%; transform: translate(-50%, -40%) scale(1.2); z-index: 5;} /* FRONT */
+}
+/* IMG2 *//* IMG2 *//* IMG2 *//* IMG2 *//* IMG2 *//* IMG2 *//* IMG2 */
+.img2 {
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    top: 50%;
+    left: 35%;
+    transform: translate(-65%, -50%) scale(1);
+    z-index: 4;
+    transition: width 0.2s, height 0.2s;
+    cursor: default;
+    border: solid 1px rgba(0, 210, 255, 1);
+}
+.img2:hover {
+    cursor: pointer;
+    width: 425px;
+    height: 265.625px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 210, 255, 1);
+}
+#img02-animation {
+    animation-name: none;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes img02-front-to-left {
+    0%      {left: 50%; top: 60%; transform: translate(-50%, -40%) scale(1.2); z-index: 5;} /* FRONT */
+    100%    {left: 35%; top: 50%; transform: translate(-65%, -50%) scale(1); z-index: 3;} /* LEFT */
+}
+@keyframes img02-left-to-back {
+    0%      {left: 35%; top: 50%; transform: translate(-65%, -50%) scale(1); z-index: 3;} /* LEFT */
+    100%    {left: 50%; top: 40%; transform: translate(-50%, -60%) scale(0.8); z-index: 2;} /* BACK */
+}
+@keyframes img02-back-to-right {
+    0%      {left: 50%; top: 40%; transform: translate(-50%, -60%) scale(0.8); z-index: 2;} /* BACK */
+    100%    {left: 65%; top: 50%; transform: translate(-35%, -50%) scale(1); z-index: 4;} /* RIGHT */
+}
+@keyframes img02-right-to-front {
+    0%      {left: 65%; top: 50%; transform: translate(-35%, -50%) scale(1); z-index: 4;} /* RIGHT */
+    100%    {left: 50%; top: 60%; transform: translate(-50%, -40%) scale(1.2); z-index: 5;} /* FRONT */
+}
+/* IMG3 *//* IMG3 *//* IMG3 *//* IMG3 *//* IMG3 *//* IMG3 *//* IMG3 */
+.img3 {
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -60%) scale(0.8);
+    z-index: 3;
+    transition: width 0.2s, height 0.2s;
+    cursor: default;
+    border: solid 1px rgba(0, 210, 255, 1);
+}
+.img3:hover {
+    cursor: pointer;
+    width: 425px;
+    height: 265.625px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 210, 255, 1);
+}
+#img03-animation {
+    animation-name: none;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes img03-front-to-left {
+    0%      {left: 50%; top: 60%; transform: translate(-50%, -40%) scale(1.2); z-index: 5;} /* FRONT */
+    100%    {left: 35%; top: 50%; transform: translate(-65%, -50%) scale(1); z-index: 3;} /* LEFT */
+}
+@keyframes img03-left-to-back {
+    0%      {left: 35%; top: 50%; transform: translate(-65%, -50%) scale(1); z-index: 3;} /* LEFT */
+    100%    {left: 50%; top: 40%; transform: translate(-50%, -60%) scale(0.8); z-index: 2;} /* BACK */
+}
+@keyframes img03-back-to-right {
+    0%      {left: 50%; top: 40%; transform: translate(-50%, -60%) scale(0.8); z-index: 2;} /* BACK */
+    100%    {left: 65%; top: 50%; transform: translate(-35%, -50%) scale(1); z-index: 4;} /* RIGHT */
+}
+@keyframes img03-right-to-front {
+    0%      {left: 65%; top: 50%; transform: translate(-35%, -50%) scale(1); z-index: 4;} /* RIGHT */
+    100%    {left: 50%; top: 60%; transform: translate(-50%, -40%) scale(1.2); z-index: 5;} /* FRONT */
+}
+/* IMG4 *//* IMG4 *//* IMG4 *//* IMG4 *//* IMG4 *//* IMG4 *//* IMG4 */
+.img4 {
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    top: 50%;
+    left: 65%;
+    transform: translate(-35%, -50%) scale(1);
+    z-index: 4;
+    transition: width 0.2s, height 0.2s;
+    cursor: default;
+    border: solid 1px rgba(0, 210, 255, 1);
+}
+.img4:hover {
+    cursor: pointer;
+    width: 425px;
+    height: 265.625px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 210, 255, 1);
+}
+#img04-animation {
+    animation-name: none;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes img04-front-to-left {
+    0%      {left: 50%; top: 60%; transform: translate(-50%, -40%) scale(1.2); z-index: 5;} /* FRONT */
+    100%    {left: 35%; top: 50%; transform: translate(-65%, -50%) scale(1); z-index: 3;} /* LEFT */
+}
+@keyframes img04-left-to-back {
+    0%      {left: 35%; top: 50%; transform: translate(-65%, -50%) scale(1); z-index: 3;} /* LEFT */
+    100%    {left: 50%; top: 40%; transform: translate(-50%, -60%) scale(0.8); z-index: 2;} /* BACK */
+}
+@keyframes img04-back-to-right {
+    0%      {left: 50%; top: 40%; transform: translate(-50%, -60%) scale(0.8); z-index: 2;} /* BACK */
+    100%    {left: 65%; top: 50%; transform: translate(-35%, -50%) scale(1); z-index: 4;} /* RIGHT */
+}
+@keyframes img04-right-to-front {
+    0%      {left: 65%; top: 50%; transform: translate(-35%, -50%) scale(1); z-index: 4;} /* RIGHT */
+    100%    {left: 50%; top: 60%; transform: translate(-50%, -40%) scale(1.2); z-index: 5;} /* FRONT */
+}
+/* IMG1 ANIMATION END */
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
