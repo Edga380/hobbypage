@@ -35,7 +35,7 @@ function Image_Clicked(image_number){
         image_number_right = all_images.length - image_number;
         number_of_presses = image_number;
         Side_Buttons_Hide();
-        document.getElementById("slideShow-main-img").style.backgroundImage = ("url('images/website/bubblespacewars/gamepageimg" + image_number + ".png')");
+        document.getElementById("slideShow-main-img").style.backgroundImage = ("url('/images/website/bubblespacewars/gamepageimg" + image_number + ".png')");
         for (let i = 0; i < all_images.length; i++) {
             all_images[i].classList.remove("active");
           }
@@ -49,7 +49,7 @@ function Image_Clicked(image_number){
         image_number_right = all_images.length - image_number;
         number_of_presses = image_number;
         Side_Buttons_Hide();
-        document.getElementById("slideShow-main-img").style.backgroundImage = ("url('images/website/bubblespacewars/gamepageimg" + image_number + ".png')");
+        document.getElementById("slideShow-main-img").style.backgroundImage = ("url('/images/website/bubblespacewars/gamepageimg" + image_number + ".png')");
         for (let i = 0; i < all_images.length; i++) {
             all_images[i].classList.remove("active");
           }
@@ -69,7 +69,7 @@ function Image_Clicked(image_number){
         image_number_right = (all_images.length - image_number) - 1;
         number_of_presses = image_number;
         Side_Buttons_Hide();
-        document.getElementById("slideShow-main-img").style.backgroundImage = ("url('images/website/bubblespacewars/gamepageimg" + image_number + ".png')");
+        document.getElementById("slideShow-main-img").style.backgroundImage = ("url('/images/website/bubblespacewars/gamepageimg" + image_number + ".png')");
         for (let i = 0; i < all_images.length; i++) {
             all_images[i].classList.remove("active");
           }
@@ -94,7 +94,7 @@ function move_Right () {
         image_number_right--;
         number_of_presses++;
         Side_Buttons_Hide();
-        document.getElementById("slideShow-main-img").style.backgroundImage = ("url('images/website/bubblespacewars/gamepageimg" + image_number_left + ".png')");
+        document.getElementById("slideShow-main-img").style.backgroundImage = ("url('/images/website/bubblespacewars/gamepageimg" + image_number_left + ".png')");
         all_images[image_number_left - 1].classList.remove("active");
         all_images[image_number_left].classList.add("active");
     }
@@ -103,7 +103,7 @@ function move_Right () {
         image_number_right--;
         number_of_presses++;
         Side_Buttons_Hide();
-        document.getElementById("slideShow-main-img").style.backgroundImage = ("url('images/website/bubblespacewars/gamepageimg" + image_number_left + ".png')");
+        document.getElementById("slideShow-main-img").style.backgroundImage = ("url('/images/website/bubblespacewars/gamepageimg" + image_number_left + ".png')");
         all_images[image_number_left - 1].classList.remove("active");
         all_images[image_number_left].classList.add("active");
         how_much_to_move = 350 - image_number_left * plus_minus_Px;
@@ -120,7 +120,7 @@ function move_Right () {
         image_number_right--;
         number_of_presses++;
         Side_Buttons_Hide();
-        document.getElementById("slideShow-main-img").style.backgroundImage = ("url('images/website/bubblespacewars/gamepageimg" + image_number_left + ".png')");
+        document.getElementById("slideShow-main-img").style.backgroundImage = ("url('/images/website/bubblespacewars/gamepageimg" + image_number_left + ".png')");
         all_images[image_number_left - 1].classList.remove("active");
         all_images[image_number_left].classList.add("active");
         how_much_to_move = how_much_to_move + (total_px - how_much_to_move);
@@ -142,7 +142,7 @@ function move_Left () {
         image_number_right++;
         number_of_presses--;
         Side_Buttons_Hide();
-        document.getElementById("slideShow-main-img").style.backgroundImage = ("url('images/website/bubblespacewars/gamepageimg" + image_number_left + ".png')");
+        document.getElementById("slideShow-main-img").style.backgroundImage = ("url('/images/website/bubblespacewars/gamepageimg" + image_number_left + ".png')");
         all_images[image_number_left + 1].classList.remove("active");
         all_images[image_number_left].classList.add("active");
     }
@@ -151,7 +151,7 @@ function move_Left () {
         image_number_right++;
         number_of_presses--;
         Side_Buttons_Hide();
-        document.getElementById("slideShow-main-img").style.backgroundImage = ("url('images/website/bubblespacewars/gamepageimg" + image_number_left + ".png')");
+        document.getElementById("slideShow-main-img").style.backgroundImage = ("url('/images/website/bubblespacewars/gamepageimg" + image_number_left + ".png')");
         all_images[image_number_left + 1].classList.remove("active");
         all_images[image_number_left].classList.add("active");
         how_much_to_move = how_much_to_move + (155 * image_number_right - 350);
@@ -164,7 +164,7 @@ function move_Left () {
         image_number_right++;
         number_of_presses--;
         Side_Buttons_Hide();
-        document.getElementById("slideShow-main-img").style.backgroundImage = ("url('images/website/bubblespacewars/gamepageimg" + image_number_left + ".png')");
+        document.getElementById("slideShow-main-img").style.backgroundImage = ("url('/images/website/bubblespacewars/gamepageimg" + image_number_left + ".png')");
         all_images[image_number_left + 1].classList.remove("active");
         all_images[image_number_left].classList.add("active");
         how_much_to_move = how_much_to_move - 155;
@@ -177,7 +177,7 @@ function move_Left () {
         image_number_right++;
         number_of_presses--;
         Side_Buttons_Hide();
-        document.getElementById("slideShow-main-img").style.backgroundImage = ("url('images/website/bubblespacewars/gamepageimg" + image_number_left + ".png')");
+        document.getElementById("slideShow-main-img").style.backgroundImage = ("url('/images/website/bubblespacewars/gamepageimg" + image_number_left + ".png')");
         all_images[image_number_left + 1].classList.remove("active");
         all_images[image_number_left].classList.add("active");
         how_much_to_move -= how_much_to_move;
