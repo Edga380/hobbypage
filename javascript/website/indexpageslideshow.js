@@ -15,7 +15,7 @@ document.onreadystatechange = function () {
 };
 document.getElementById("img01-animation").onclick = function (){
     if(position == 1){
-        window.location.href = "bubble-space-wars.html";
+        window.location.href = "bubblespacewars.html";
         return false;
     }
     else{
@@ -24,7 +24,7 @@ document.getElementById("img01-animation").onclick = function (){
 };
 document.getElementById("img02-animation").onclick = function (){
     if(position == 4){
-        window.location.href = "Labyrinth2d.html";
+        window.location.href = "labyrinth2d.html";
         return false;
     }
     else{
